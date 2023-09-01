@@ -106,7 +106,7 @@ lower_bound()//二分查找第一个不小于某个值的元素的迭代器
 普通双指针：两个指针往同一方向移动
 
 
-对撞双指针：两个指针面对面的移动 题:[881](https://github.com/wrc0616/cpp-wrc-learning/blob/main/leetcode/881%20%E6%95%91%E7%94%9F%E8%89%87.cpp)
+对撞双指针：两个指针面对面的移动 题: [881](https://github.com/wrc0616/cpp-wrc-learning/blob/main/leetcode/881%20%E6%95%91%E7%94%9F%E8%89%87.cpp)
 
 
 快慢双指针：慢指针+块指针  题：[141](https://github.com/wrc0616/cpp-wrc-learning/blob/main/leetcode/141%20%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8.cpp)
