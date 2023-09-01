@@ -11,11 +11,30 @@
 unordered_set<type> myset;
 set<type> myset;
 
-// 插入元素
+// 添加元素
 myset.insert(元素);
 
-//
+//访问元素（set中的元素是有序的）
+for(const int &num : myset){
+  cout<<num<<endl;
+}
+//删除元素
+myset.erase(元素)；
 
+//查找元素
+//find()用法
+if(myset.find(target)!=myset.end())
+{
+  cout<<target<<"found in the set."<<endl;
+}
+//count()用法
+if(myset.count(traget)==1)
+{
+  cout<<target<<"found in the set."<<endl;
+}
+
+//长度
+myset.size();
 //
 1.创建
 2.添加元素
