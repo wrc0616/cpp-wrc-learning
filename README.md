@@ -3,6 +3,19 @@
 
 
 ## 数据结构
+### Set
+
+```cpp
+// 定义一个 set
+#include <set>
+unordered_set<type> myset;
+set<type> myset;
+
+// 插入元素
+myset.insert(元素);
+
+
+```
 
 
 ## 算法
@@ -13,5 +26,4 @@
 对撞双指针：两个指针面对面的移动
 
 
-
-快慢双指针：慢指针+块指针
+快慢双指针：慢指针+块指针  题：141
