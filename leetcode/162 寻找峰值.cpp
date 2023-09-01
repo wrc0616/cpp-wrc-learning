@@ -20,3 +20,38 @@ public:
         return left;
     }
 };
+
+//找到最大的值，max.
+class Solution {
+public:
+    int findPeakElement(vector<int>& nums) {
+        return max_element(nums.begin(),nums.end())-nums.begin();
+    }
+};
+
+//迭代的方法
+class Solution {
+public:
+    int findPeakElement(vector<int>& nums) {
+        int i=0;
+        if(nums.size()==1)
+        {
+            return 0;
+        }
+        if(nums[0]>nums[1])
+            {return 0;}
+        if(nums[nums.size()-1]>nums[nums.size()-2])
+        {
+            return nums.size()-1;
+        }
+        for(i=1 ;i<nums.size()-1;i++)
+        {
+            
+            if(nums[i-1]<nums[i]&&nums[i+1]<nums[i])
+            {
+                return i;
+            }
+        }
+        return 0;
+    }
+};
