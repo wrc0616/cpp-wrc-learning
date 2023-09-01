@@ -3,8 +3,48 @@
 
 
 ## 数据结构
-### Set
+### map 哈希表
+```cpp
+//定义一个map
+map<string,int> mymap;
+unordered_map<string,int> mymap;
 
+//添加元素
+mymap['key'] = 25;
+
+//访问元素
+cout << "key: " << mymap["key"] << endl;
+
+//修改元素
+mymap['key'] = 100;
+
+//删除元素
+mymap.erase('key');
+
+//遍历
+map<std::string, int>::iterator it;
+for (it = mymap.begin(); it != mymap.end(); ++it)
+{
+  std::cout << it->first << ": " << it->second << std::endl;
+}
+
+//查找
+//find()用法
+string target = "key"；
+if(mymap.find(target)!=mymap.end())
+{
+  cout<<target<<"found in the map."<<endl;
+}
+//count()用法
+if(mymap.count(traget)==1)
+{
+  cout<<target<<"found in the map."<<endl;
+}
+```
+
+
+
+### Set 集合
 ```cpp
 // 定义一个 set
 #include <set>
@@ -35,6 +75,12 @@ if(myset.count(traget)==1)
 
 //长度
 myset.size();
+
+//其他用法
+clear()//清空集合
+empty()//判断是否为空
+swap()//交换两个集合的变量
+lower_bound()//二分查找第一个不小于某个值的元素的迭代器
 //
 1.创建
 2.添加元素
