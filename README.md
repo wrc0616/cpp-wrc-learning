@@ -40,6 +40,12 @@ if(mymap.count(traget)==1)
 {
   cout<<target<<"found in the map."<<endl;
 }
+
+//长度
+mymap.size();
+
+//其他
+empty() //查看是否为空
 ```
 
 
