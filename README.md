@@ -115,3 +115,35 @@ lower_bound()//二分查找第一个不小于某个值的元素的迭代器
 ### 二分法查找法
 题: [704](https://github.com/wrc0616/cpp-wrc-learning/blob/main/leetcode/704%20%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE.cpp)
 、[35]
+
+
+## c++的一些函数
+- max_element()与min_element()
+```cpp
+#include <vector>
+#include <iostream>
+#include <algorithm>
+vector<int> n;
+int maxPosition = max_element(n.begin(),n.end()) - n.begin(); //最大值下标
+
+int minPosition = min_element(n.begin(),n.end()) - n.begin();//最小值下标
+
+2）普通数组
+int a[]={1,2,3,4};
+int maxPosition = max_element(a,a+2) - a; //最大值下标
+
+int minPosition = min_element(a,a+2) - a;//最小值下标
+
+// *max_element（）与*min_element（）分别用来求最大元素和最小元素的值。
+// 接收参数：容器的首尾地址（迭代器）（可以是一个区间）
+// 返回：最值元素的值
+
+int maxValue = *max_element(n.begin(),n.end()); //最大值
+
+int minValue = *min_element(n.begin(),n.end());//最小值
+
+
+int maxValue = *max_element(a,a+2); //最大值
+
+int minValue = *min_element(a,a+2);//最小值
+```
