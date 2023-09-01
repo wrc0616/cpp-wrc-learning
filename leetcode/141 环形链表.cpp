@@ -1,6 +1,6 @@
 
 
-//  快慢指针方法
+//方法一  快慢指针
 /**
  * Definition for singly-linked list.
  * struct ListNode {
@@ -37,3 +37,37 @@ public:
 
     }
 };
+
+
+
+
+//方法二 哈希表，集合
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode(int x) : val(x), next(NULL) {}
+ * };
+ */
+class Solution {
+public:
+    bool hasCycle(ListNode *head) {
+        //定义一个集合，<>中为存储的数据类型
+        unordered_set<ListNode *> myset;
+        while(head!=nullptr)
+        {
+            //count函数是查找集合中有无相同的元素，如果有返回true，没有返回false
+            if(myset.count(head)==1)
+            {
+                return true;
+            }
+            //insert在集合中插入head这个元素
+            myset.insert(head);
+            head=head->next;
+        }
+        return false;
+
+    }
+};
+
