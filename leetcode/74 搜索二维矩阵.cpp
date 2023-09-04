@@ -31,3 +31,21 @@ public:
 };
 
 //方法二  二次二分查找法
+class Solution {
+public:
+    bool searchMatrix(vector<vector<int>> matrix, int target) {
+        //找到第一个矩阵行数【0】大于target的行数
+        auto row = upper_bound(matrix.begin(), matrix.end(), target, [](const int b, const vector<int> &a) {
+            return b < a[0];
+        });
+        if (row == matrix.begin()) {
+            return false;
+        }
+        --row;
+        //
+        return binary_search(row->begin(), row->end(), target);
+    }
+};
+
+
+
