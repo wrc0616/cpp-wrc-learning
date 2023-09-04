@@ -142,8 +142,19 @@ int maxValue = *max_element(n.begin(),n.end()); //最大值
 
 int minValue = *min_element(n.begin(),n.end());//最小值
 
-
 int maxValue = *max_element(a,a+2); //最大值
 
 int minValue = *min_element(a,a+2);//最小值
+```
+- binary_search()
+binary_search() 函数定义在<algorithm>头文件中，用于查找指定区域内是否包含某个目标元素。
+
+该函数有 2 种语法格式，分别为：
+```cpp
+//查找 [first, last) 区域内是否包含 val
+bool binary_search (ForwardIterator first, ForwardIterator last,
+                      const T& val);
+//根据 comp 指定的规则，查找 [first, last) 区域内是否包含 val
+bool binary_search (ForwardIterator first, ForwardIterator last,
+                      const T& val, Compare comp);
 ```
