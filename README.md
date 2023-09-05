@@ -3,6 +3,55 @@
 
 
 ## 数据结构
+### vector数组
+```cpp
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std; // 引入命名空间 std
+//定义一个vector
+vector<int> myVector;
+// 添加元素
+myVector.push_back(42);
+myVector.push_back(18);
+myVector.push_back(7);
+myVector.push_back(99);
+// 访问元素
+int firstElement = myVector[0];
+cout << "First element: " << firstElement << endl;
+// 修改元素
+myVector[1] = 55;
+// 删除元素
+myVector.pop_back();
+// 遍历元素
+for (int element : myVector) {
+  cout << element << " ";
+}
+// 查找元素
+int target = 7;
+vector<int>::iterator  iter=find(myVector.begin(), myVector.end(), target);
+if(iter!=myVector.end())
+	{	
+		int index = distance(myVector.begin(),iter);
+		cout << "Element " << target << " found at index " << index << endl;
+		
+	}
+	else {
+    cout << "Element " << target << " not found" << endl;
+    }
+// 使用 std::count 查找元素
+int target = 7;
+int count = std::count(myVector.begin(), myVector.end(), target);//count的值为target在数组中出现的次数
+// 长度
+int length = myVector.size();
+cout << "Vector length: " << length << endl;
+// 排序
+sort(myVector.begin(), myVector.end());//默认从小到大
+sort(myVector.begin(), myVector.end(),std::greater<int>());//从大到小
+sort(myVector.begin(), myVector.end(),std::less<int>());//从小到大
+
+
+```
 ### map 哈希表
 ```cpp
 //定义一个map
