@@ -47,3 +47,32 @@ public:
         return getmajority(nums,0,nums.size()-1);
     }
 };
+
+//哈希表法
+class Solution {
+public:
+    int majorityElement(vector<int>& nums) {
+        unordered_map<int,int> mymap;
+        int res=0;
+        int count=0;
+        for(int i:nums)
+        {
+            mymap[i]++;
+            if(mymap[i]>count)
+            {
+                count = mymap[i];
+                res = i;
+            }
+        }
+        return res;
+    }
+};
+//数学法
+class Solution {
+public:
+    int majorityElement(vector<int>& nums) {
+        sort(nums.begin(),nums.end());
+        int n = (nums.size()-1)/2;
+        return nums[n];
+    }
+};
