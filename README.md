@@ -175,6 +175,7 @@ lower_bound()//二分查找第一个不小于某个值的元素的迭代器
 、[206](https://github.com/wrc0616/cpp-wrc-learning/blob/main/leetcode/206%20%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8.cpp)
 ### 分治法
 题 [169](https://github.com/wrc0616/cpp-wrc-learning/blob/main/leetcode/169%20%E5%A4%9A%E6%95%B0%E5%85%83%E7%B4%A0.cpp)
+、[53](https://github.com/wrc0616/cpp-wrc-learning/blob/main/leetcode/53%20%E6%9C%80%E5%A4%A7%E5%AD%90%E6%95%B0%E7%BB%84%E5%92%8C.cpp)
 ## c++的一些函数
 - max_element()与min_element()
 ```cpp
