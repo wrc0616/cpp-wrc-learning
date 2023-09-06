@@ -52,6 +52,50 @@ sort(myVector.begin(), myVector.end(),std::less<int>());//从小到大
 
 
 ```
+### queue 队列
+```cpp
+#include <iostream>
+#include <queue>
+
+using namespace std;
+
+
+// 1. 创建队列
+queue<int> myQueue;
+
+// 2. 添加元素
+myQueue.push(42);
+
+// 3. 访问元素
+int frontElement = myQueue.front();
+cout << "Front element: " << frontElement << endl;
+
+// 4. 修改元素 - 队列通常不支持修改元素
+
+// 5. 删除元素
+myQueue.pop();
+
+// 6. 遍历队列
+myQueue.push(10);
+myQueue.push(20);
+myQueue.push(30);
+
+while (!myQueue.empty()) {
+	int element = myQueue.front();
+	cout << "Element: " << element << endl;
+	myQueue.pop();
+}
+
+// 7. 查找元素 - 队列通常不支持直接查找元素
+
+// 8. 获取队列长度
+int queueSize = myQueue.size();
+cout << "Queue size: " << queueSize << endl;
+
+// 9. 排序 - 队列不支持排序操作
+
+
+```
 ### map 哈希表
 ```cpp
 //定义一个map
