@@ -178,6 +178,11 @@ lower_bound()//二分查找第一个不小于某个值的元素的迭代器
 、[53](https://github.com/wrc0616/cpp-wrc-learning/blob/main/leetcode/53%20%E6%9C%80%E5%A4%A7%E5%AD%90%E6%95%B0%E7%BB%84%E5%92%8C.cpp)
 ### 回溯法
 题 [22](https://github.com/wrc0616/cpp-wrc-learning/blob/main/leetcode/22%20%20%E6%8B%AC%E5%8F%B7%E7%94%9F%E6%88%90.cpp)
+、[78](https://github.com/wrc0616/cpp-wrc-learning/blob/main/leetcode/78%20%E5%AD%90%E9%9B%86.cpp)
+### 深度优先算法（DFS）
+题 [938](https://github.com/wrc0616/cpp-wrc-learning/blob/main/leetcode/938%20%20%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E7%9A%84%E8%8C%83%E5%9B%B4%E5%92%8C.cpp)
+、[200]()
+### 广度优先算法（BFS）
 ## c++的一些函数
 - max_element()与min_element()
 ```cpp
